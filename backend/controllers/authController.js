@@ -38,3 +38,7 @@ exports.login = async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 };
+
+exports.getMe = async (req, res) => {
+  res.json({ user: req.user });
+};
