@@ -25,6 +25,12 @@ export default function Home() {
           <p className="text-gray-800">
             Logged in as <strong>{user.name}</strong>({user.role})
           </p>
+          <Link
+            to="/dashboard"
+            className="text-green-700 font-medium block mt-1"
+          >
+            Go to Dashboard
+          </Link>
           <button
             onClick={logout}
             className="mt-2 bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900"
